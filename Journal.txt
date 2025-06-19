@@ -16,4 +16,9 @@ Leetcode Journal
 ⭐ Stack
 • Valid Parentheses (easy) 6/19/2025
   Create stack and hashmap to match parentheses (key = right parentheses, value = left parentheses). Check for left and right parentheses, append left ones (i in check.values())
-and make sure any right parentheses have a valid left one or the stack isn't empty. At the end make sure stack is empty (all left parentheses are popped)
+  and make sure any right parentheses have a valid left one or the stack isn't empty. At the end make sure stack is empty (all left parentheses are popped)
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+⭐ Two Pointers
+• Valid Palindrome (easy) 6/19/2025
+  Make 2 variables that hold the indexes from the left and right. Loop while left is less than right, then check if not equal and increment
