@@ -13,3 +13,7 @@ Leetcode Journal
   Then check if it's in the hashmap (initilize and increment eac index like a list .append and = [" "]) and return a list of just the values using list(hashmap.values())
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+⭐ Stack
+• Valid Parentheses (easy) 6/19/2025
+  Create stack and hashmap to match parentheses (key = right parentheses, value = left parentheses). Check for left and right parentheses, append left ones (i in check.values())
+and make sure any right parentheses have a valid left one or the stack isn't empty. At the end make sure stack is empty (all left parentheses are popped)
