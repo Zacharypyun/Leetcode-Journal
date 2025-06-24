@@ -11,9 +11,12 @@ Leetcode Journal
 • Group Anagrams (medium) 6/18/2025
   Make a hashmap to check anagrams (this will be a hashmap where the values are lists). For each word put it in alphabetical order (any anagrams become the same "word"). 
   Then check if it's in the hashmap (initilize and increment eac index like a list .append and = [" "]) and return a list of just the values using list(hashmap.values())
-• Top K Frequent Elements (easy) 6/19/2025
+• Top K Frequent Elements (medium) 6/19/2025
   Make a hashmap to find the most common elements. Now sort the hashmap using a heap (binary tree basically) (use the built in heap functions), then pop k elements into an
   array and return
+• Product of Array Except Self (medium) 6/24/2025
+  The goal is answer = product of numbers to the left x product of the numbers to the right (ex. [1, 2, 3, 4, 5] 3 -> 2 * 20 = 40). So you take 2 passes (loops) one from the 
+  left then one from the right, both multiplying all values before it (edges multiply 1)
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ⭐ Stack
