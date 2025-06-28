@@ -2,15 +2,15 @@ Leetcode Journal
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ⭐ Arrays & Hashing
 • Contains Duplicate (easy) 6/18/2025
-  Add each element to a set if it's already in the set reutrn True
+  Add each element to a set if it's already in the set, return True
 • Valid Anagram (easy) 6/18/2025
-  Make 2 hashmaps then check if equal
+  Make 2 hashmaps, then check if equal
 • Two Sum (easy) 6/18/2025
   Create a hashmap to store seen values (key = num, values = index). 
-  Check if the difference of the target and current number is in the hashmapp, and if it is you return a list with both indexes
+  Check if the difference of the target and current number is in the hashmap, and if it is you return a list with both indexes
 • Group Anagrams (medium) 6/18/2025
   Make a hashmap to check anagrams (this will be a hashmap where the values are lists). For each word put it in alphabetical order (any anagrams become the same "word"). 
-  Then check if it's in the hashmap (initilize and increment eac index like a list .append and = [" "]) and return a list of just the values using list(hashmap.values())
+  Then check if it's in the hashmap (initialize and increment eac index like a list .append and = [" "]) and return a list of just the values using list(hashmap.values())
 • Top K Frequent Elements (medium) 6/19/2025
   Make a hashmap to find the most common elements. Now sort the hashmap using a heap (binary tree basically) (use the built in heap functions), then pop k elements into an
   array and return
