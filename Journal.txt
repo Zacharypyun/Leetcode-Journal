@@ -28,3 +28,8 @@ Leetcode Journal
 ⭐ Two Pointers
 • Valid Palindrome (easy) 6/19/2025
   Make 2 variables that hold the indexes from the left and right. Loop while left is less than right, then check if not equal and increment
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+⭐ Binary Search
+• Binary Search (easy) 7/1/2025
+  Have a left and a right variable that holds the indexes of the beginning and the end. And have a curent variable that is the middle of ledt and right (= (left + right_ //2)
+loop until left > right. Then mid < target, set left = mid + 1. When mid > target, set right = mid - 1.
