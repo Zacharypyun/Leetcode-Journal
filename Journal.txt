@@ -33,3 +33,13 @@ Leetcode Journal
 • Binary Search (easy) 7/1/2025
   Have a left and a right variable that holds the indexes of the beginning and the end. And have a curent variable that is the middle of ledt and right (= (left + right_ //2)
 loop until left > right. Then mid < target, set left = mid + 1. When mid > target, set right = mid - 1.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+⭐ Linked List
+• Reverse Linked List (easy) 7/1/2025
+  Make prev, curr, and next_node variables. Set prev to none, and curr to head. Loop until curr = none. Each itertion set next_node to the next node, curr.next to prev, prev 
+  to curr, and curr to the next node.
+• Merge Two Linked Lists (easy) 7/1/2025
+  Check if each list is empty (return other if so). Find first node (smallest) and set head equal to it. Loop until list 1 or 2 is empty, cchecking which lists ehad is    
+  smaller, appending then iterating. Attach remaining nodes from none empty list and return
+• Linked List Cycle (easy) 7/1/2025
+  Make hashset and store nodes if seen or not (not as efficient spacewise but you need to learn some algorithm)
