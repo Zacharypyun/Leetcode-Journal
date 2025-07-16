@@ -17,6 +17,11 @@ Leetcode Journal
 • Product of Array Except Self (medium) 6/24/2025
   The goal is answer = product of numbers to the left x product of the numbers to the right (ex. [1, 2, 3, 4, 5] 3 -> 2 * 20 = 40). So you take 2 passes (loops) one from the 
   left then one from the right, both multiplying all values before it (edges multiply 1)
+• Valid Sudoku (medium) 7/16/2025
+  Create 3 lists of hashsets (one for rows, columns, and 3x3 boxes). Loop through 2d array and append any values that are not in each set. If it is in the set return False. 
+  if check the values is ".", if it is use continue keyword to skip that loop iteration (nothing to append). For the boxes you need to convert a 2d value into a single
+  value to not waste space complexity, this solusion uses ((row // 3) * 3 + (col//3)) which basically works as a hashkey to make each grouping of 3 (for row and col) to be
+  one index for the list of hashsets.
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ⭐ Stack
