@@ -22,7 +22,10 @@ Leetcode Journal
   if check the values is ".", if it is use continue keyword to skip that loop iteration (nothing to append). For the boxes you need to convert a 2d value into a single
   value to not waste space complexity, this solusion uses ((row // 3) * 3 + (col//3)) which basically works as a hashkey to make each grouping of 3 (for row and col) to be
   one index for the list of hashsets.
-
+• Longest Consecutive Sequence (medium) 7/16/2025
+  Create a hashset to store all numbers, and a variable to hold the longest sequence. For each number (for loop) check if the previous values is in the hashset (num-1) if it
+  is, check all incrementing values (num+1, num+2, num+3, ...) until a number isnt in hashset (increment temp longest each iteration) (using a while loop). Then find if temp 
+  or longest is larger and reassign and loop again until all nums are used then return. 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ⭐ Stack
 • Valid Parentheses (easy) 6/19/2025
