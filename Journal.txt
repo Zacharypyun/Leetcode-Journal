@@ -26,6 +26,7 @@ Leetcode Journal
   Create a hashset to store all numbers, and a variable to hold the longest sequence. For each number (for loop) check if the previous values is in the hashset (num-1) if it
   is, check all incrementing values (num+1, num+2, num+3, ...) until a number isnt in hashset (increment temp longest each iteration) (using a while loop). Then find if temp 
   or longest is larger and reassign and loop again until all nums are used then return. 
+
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ⭐ Stack
 • Valid Parentheses (easy) 6/19/2025
@@ -36,11 +37,13 @@ Leetcode Journal
 ⭐ Two Pointers
 • Valid Palindrome (easy) 6/19/2025
   Make 2 variables that hold the indexes from the left and right. Loop while left is less than right, then check if not equal and increment
+
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ⭐ Binary Search
 • Binary Search (easy) 7/1/2025
   Have a left and a right variable that holds the indexes of the beginning and the end. And have a curent variable that is the middle of ledt and right (= (left + right_ //2)
 loop until left > right. Then mid < target, set left = mid + 1. When mid > target, set right = mid - 1.
+
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ⭐ Linked List
 • Reverse Linked List (easy) 7/1/2025
@@ -51,4 +54,16 @@ loop until left > right. Then mid < target, set left = mid + 1. When mid > targe
   smaller, appending then iterating. Attach remaining nodes from none empty list and return
 • Linked List Cycle (easy) 7/1/2025
   Make hashset and store nodes if seen or not (not as efficient spacewise but you need to learn some algorithm)
+
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+⭐ Sliding Window
+• Best Time to Buy and Sell Stock (easy) 7/22/2025
+  track the max_value (selling price - buying price) and the indexes of buy and sell price. Loop through numbers using sell as the incrementing (right side of window). If buy
+  is greater than selling, then set buing equal to the selling index and move the left window up, and if selling - buying greater than max_value swap them and save the indexs 
+  in the list and return the prices once loop finished 
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+⭐ Trees
+• Invert Binary Tree (easy) 7/22/2025
+  using recustion you need to swap the left and right indexes. The recusrive calls are before the swap becasue the child nodes need to be swaped before the parent nodes are
+  swaped. The actual code is very simple no need for DFS or BSF.
