@@ -1,0 +1,16 @@
+When to use BFS vs DFS
+
+    BFS is generaly used when the problem talks about levels, distance, or shortest path.
+        BFS spreads out evenly so it better for shallow solutions
+    
+    DFS is generaly used when you need to expore all possible paths, need to backtrack, 
+    accumulate stateor divide and conquer
+        DFS is exaustive and checks all nodes
+
+Pseudo Code
+
+    BFS should be done using a queue or stack to track what has been seen and to insert child
+    nodes into
+
+    DFS should be done recursivly, calling the function on each child insures that 
+    everything is searched

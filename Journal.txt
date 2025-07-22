@@ -61,6 +61,10 @@ loop until left > right. Then mid < target, set left = mid + 1. When mid > targe
   track the max_value (selling price - buying price) and the indexes of buy and sell price. Loop through numbers using sell as the incrementing (right side of window). If buy
   is greater than selling, then set buing equal to the selling index and move the left window up, and if selling - buying greater than max_value swap them and save the indexs 
   in the list and return the prices once loop finished 
+• Longest Substring Without Repeating Characters (medium) 7/22/2025
+  traking the right and left window, and the longest substring, first loop through the string for each char (looping element in right window), at the beginning have a while loop
+  for removeing the current letter from seen (this will only run if there is a duplicate), removes all elements before the first apperance of the duplicate (and the original 
+  duplicate), it also slides the left window over. And then it adds the duplicate back and checks for max length
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ⭐ Trees
