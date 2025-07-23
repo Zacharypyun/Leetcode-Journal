@@ -41,6 +41,12 @@ Leetcode Journal
 ⭐ Two Pointers
 • Valid Palindrome (easy) 6/19/2025
   Make 2 variables that hold the indexes from the left and right. Loop while left is less than right, then check if not equal and increment
+• Two Sum II (medium) 7/22/2025
+  have a left and a right pointer. Loop while left < right. Track the current sum (left + right) if the current sum is greater than the target, decrement right, if its less
+  than, increment left. then return
+• 3 Sum (medium) 7/22/2025
+• Container With Most Water (medium) 7/22/2025
+  create left and right pointer and max area. Loop while left < right, inside loop track current area. If the increment/deincrement which ever height is smaller then return
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ⭐ Binary Search
