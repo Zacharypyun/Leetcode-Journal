@@ -36,6 +36,10 @@ Leetcode Journal
 • Valid Parentheses (easy) 6/19/2025
   Create stack and hashmap to match parentheses (key = right parentheses, value = left parentheses). Check for left and right parentheses, append left ones (i in    
   check.values()) and make sure any right parentheses have a valid left one or the stack isn't empty. At the end make sure stack is empty (all left parentheses are popped)
+• Min Stack (medium) 7/23/2025
+  a min stack is a stack where there is both a regular stack and a stack that contains the minimum value at each inserted value. For any value that is pushed you push the
+  current/new minimum into the min stack. when popping pop both stacks becasue its fifo so the top value will always be the recently inserted element for both the stack and 
+  min
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ⭐ Two Pointers
