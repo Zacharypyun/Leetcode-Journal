@@ -82,6 +82,4 @@ loop until left > right. Then mid < target, set left = mid + 1. When mid > targe
   using recustion you need to swap the left and right indexes. The recusrive calls are before the swap becasue the child nodes need to be swaped before the parent nodes are
   swaped. The actual code is very simple no need for DFS or BSF.
 • Maximum Depth of Binary Tree (easy) 7/22/2025
-  we will use DFS
-
-
+  we will use recursice DFS. base case is to return 0 when the node is null. think about the tree, you only need one branch each recusrion so you take the max(left, right)
