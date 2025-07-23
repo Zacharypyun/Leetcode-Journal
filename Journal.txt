@@ -40,6 +40,9 @@ Leetcode Journal
   a min stack is a stack where there is both a regular stack and a stack that contains the minimum value at each inserted value. For any value that is pushed you push the
   current/new minimum into the min stack. when popping pop both stacks becasue its fifo so the top value will always be the recently inserted element for both the stack and 
   min
+• Evaluate Reverse Polish Notation (medium) 7/23/2025
+  Its gives you postfix notation and you need to evaluate it. Literally just push everyhting into the stack, and when you come across an opperator pop the top 2 elements and
+  evaluate then push answer back to stack
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ⭐ Two Pointers
