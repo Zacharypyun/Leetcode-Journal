@@ -14,3 +14,6 @@ Pseudo Code
 
     DFS should be done recursivly, calling the function on each child insures that 
     everything is searched
+
+Recusrive DFS
+    when using recursive DFS think backwards (starting from the base case and up). This helps to imagine how the recursive calls work at a smaller scale before tackling the whole problem
