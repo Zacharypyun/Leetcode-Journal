@@ -44,7 +44,12 @@ Leetcode Journal
 • Two Sum II (medium) 7/22/2025
   have a left and a right pointer. Loop while left < right. Track the current sum (left + right) if the current sum is greater than the target, decrement right, if its less
   than, increment left. then return
-• 3 Sum (medium) 7/22/2025
+• 3 Sum (medium) 7/23/2025
+  you will have 3 pointers, and the best possible runtime is O(n^2). Sort the numbers before starting. The outside loop controlls the left pointer and increments down the 
+  numbers. When a triplet is found increment both right and mid increment. However for all 3 pointers you need to skip duplicates, because occasionally if you leave them
+  you will end up with the same triplet again just with a diffrent index (but the same value) for one of the pointers. (for all of them onces a triplet is found increment 
+  until not on a duplicate)
+  act as the 2 pointers (this part is like a normal 2 pointers problem). check current sum and increment and decrement based on 
 • Container With Most Water (medium) 7/22/2025
   create left and right pointer and max area. Loop while left < right, inside loop track current area. If the increment/deincrement which ever height is smaller then return
 
