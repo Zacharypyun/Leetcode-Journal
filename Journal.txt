@@ -95,3 +95,15 @@ loop until left > right. Then mid < target, set left = mid + 1. When mid > targe
   swaped. The actual code is very simple no need for DFS or BSF.
 • Maximum Depth of Binary Tree (easy) 7/22/2025
   we will use recursice DFS. base case is to return 0 when the node is null. think about the tree, you only need one branch each recusrion so you take the max(left, right)
+• Diameter of Binary Tree (easy) 7/24/2025
+    
+• Balanced Binary Tree (easy) 7/24/2025
+
+• Same Tree (easy) 7/24/2025
+  the way to check it is to use dfs and at each recursion check to ty to prove it false (ie. the 2 nodes are notequal, or one is none and the other isnt). And the base case 
+  of where both nodes are None (returns true, proving that both trees are the same because no False value was ever returned)
+• Subtree of Another Tree (easy) 7/24/2025
+  Uses the same idea in Same Tree as a helper function to help prove that a subtree is the same as the provided tree. Then using the check function check every node to try 
+  and find a node here its tree and the provided subtree return true from check()
+
+
