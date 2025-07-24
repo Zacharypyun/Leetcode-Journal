@@ -17,3 +17,15 @@ Pseudo Code
 
 Recusrive DFS
     when using recursive DFS think backwards (starting from the base case and up). This helps to imagine how the recursive calls work at a smaller scale before tackling the whole problem
+
+READ BELOW!!! 
+
+Can I exploit a tree property that would considerably reduce the search space? For example if it's a binary search tree, I would only have to care about one half of the problem.
+
+Should I go depth first or breadth first? If I need to process the nodes which are on the same "level" first before moving on to the next, I'd go breadth first, otherwise depth first.
+
+Okay I have figured out which style of searching I have to do. How do I actually do that? For depth first, just call dfs on each child node. For breadth first, maintain a queue (a simple array/list is fine) push in all children of the current node in the queue. Pop one child out, push all of its children in the queue and repeat the process.
+
+Add in any necessary conditions to skip parts of a tree, and the base case. For instance, for binary search tree, you only have to run dfs on one half of the tree.
+
+Take a couple of small trees (binary trees, 3-4 levels deep), run dfs and bfs on them. Grab a pen and paper and at each step, draw the current node and add an edge with it's parent. You'd see the tree forming in two different ways depending on the algorithm. Once you've visualized this, it would be a lot easier to apply.
