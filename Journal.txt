@@ -96,14 +96,19 @@ loop until left > right. Then mid < target, set left = mid + 1. When mid > targe
 • Maximum Depth of Binary Tree (easy) 7/22/2025
   we will use recursice DFS. base case is to return 0 when the node is null. think about the tree, you only need one branch each recusrion so you take the max(left, right)
 • Diameter of Binary Tree (easy) 7/24/2025
-    
+  track the maximum diameter and attempt to update it whenever your reach a leaf node. We know that the longest path will at some point go though so parent node, so at each 
+  node the maxDiamter will be the max of the left side plus the max of the   right side, so the challenge is finding the max of the left and right subtree. In order to do 
+  this the final return will be the max of the left and rigth subtrees + 1. because the diameter of that node will be the root + which ever the longest subtree is for both 
+  the right and left
 • Balanced Binary Tree (easy) 7/24/2025
-
+  the goal is to find if the diffrence of the height of 2 subtrees is ever greater than 1. In order to do this you need to make a helper function that finds the height of 
+  the two subtrees of a node and makes sure that subtrees are always within 1 of each other. The problem I had was that once I was finding a pair of subtrees that were not 
+  balanced, I kept checking which led to a True being passed when another valid subtree was found. To fix it I needed to add if leftHeight < 0 or rightHeight < 0 or   
+  abs(leftHeight - rightHeight) > 1: return 1. this will prevent from any other subtrees being checked once one is invalid by setting either rightHeight or leftHeight to -1
+  which the if statement blocks
 • Same Tree (easy) 7/24/2025
   the way to check it is to use dfs and at each recursion check to ty to prove it false (ie. the 2 nodes are notequal, or one is none and the other isnt). And the base case 
   of where both nodes are None (returns true, proving that both trees are the same because no False value was ever returned)
 • Subtree of Another Tree (easy) 7/24/2025
   Uses the same idea in Same Tree as a helper function to help prove that a subtree is the same as the provided tree. Then using the check function check every node to try 
   and find a node here its tree and the provided subtree return true from check()
-
-
