@@ -7,6 +7,10 @@ heapq.heapop(list) //pops the first element while maintaining a heap structure
 
 heapq.heappush(list, element) //pushes element into the list and mantains the heaps structure
 
-heapq._heapify_max(data) //max heap
+Max heap: do a regular min heap but insert all the numbers as negatives
+	max_heap = []
+	for num in nums:
+		max_heap.append(num)
+	heapq.heapify(max_heap)
 
 something = heapq.merge(list1, list2) //returns a min heap with all values from both lists
