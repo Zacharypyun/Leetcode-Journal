@@ -1,0 +1,12 @@
+import heapq
+
+heapq.heapify(list) // turns a list into a prioirty queue (basic definition is a min heap)
+
+heapq.heapop(list) //pops the first element while maintaining a heap structure
+			//you can also pop normaly on the data but it would ruin the heap structure so only use .heappop
+
+heapq.heappush(list, element) //pushes element into the list and mantains the heaps structure
+
+heapq._heapify_max(data) //max heap
+
+something = heapq.merge(list1, list2) //returns a min heap with all values from both lists
