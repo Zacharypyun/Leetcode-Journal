@@ -112,3 +112,11 @@ loop until left > right. Then mid < target, set left = mid + 1. When mid > targe
 • Subtree of Another Tree (easy) 7/24/2025
   Uses the same idea in Same Tree as a helper function to help prove that a subtree is the same as the provided tree. Then using the check function check every node to try 
   and find a node here its tree and the provided subtree return true from check()
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+⭐ Heap & Priority Queue
+• Kth Largest Element in a Stream (easy) 7/30/2025
+  int __init__ you define self.k and self.nums (pq). Then you make sure that the pq always has k elements and the first element (min) will always be the kth element 
+• Last Stone Weight (easy) 7/30/2025
+  turn the list of stones into a max heap priority queue. To do this you insert all stones into a min heap but as negatives (which makes it a min heap). then just iterate until
+  "max heap" has 1 or less values in it and return
