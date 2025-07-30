@@ -124,3 +124,6 @@ loop until left > right. Then mid < target, set left = mid + 1. When mid > targe
   the goal is to return the k closest points to the origin. So you need to make a max heap because you want to pop the max elements out and leave all the small ones. 
   you will be pushing tuples into the PQ (distance, point), the PQ sorts by the first element in the tuple. Then you pop until the pq has a length of k and return 
   just the points.
+• Kth Largest Element in an Array (medium) 7/30/2025
+  create a max heap, then pop out k elements then return the front of the PQ. HOWEVER, THIS IS NOT THE MOST OPTIMAL SOLUTION (using PQ is n log n). The most optimal solution 
+  is if you use quicksort algorith (O(n)), I dont remember quicksort, RELEARN ALL THE SEARCH AND SORT ALGORITHMS AFTER RELEARNING DATA STRUCTURES
