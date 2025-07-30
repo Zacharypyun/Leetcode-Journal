@@ -14,3 +14,5 @@ Max heap: do a regular min heap but insert all the numbers as negatives
 	heapq.heapify(max_heap)
 
 something = heapq.merge(list1, list2) //returns a min heap with all values from both lists
+
+if you push a tuple (variable1, variable2) it sorts by the first element
