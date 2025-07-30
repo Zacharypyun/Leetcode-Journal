@@ -120,3 +120,7 @@ loop until left > right. Then mid < target, set left = mid + 1. When mid > targe
 • Last Stone Weight (easy) 7/30/2025
   turn the list of stones into a max heap priority queue. To do this you insert all stones into a min heap but as negatives (which makes it a min heap). then just iterate until
   "max heap" has 1 or less values in it and return
+• K Closest Points to Origin (medium) 7/30/2025
+  the goal is to return the k closest points to the origin. So you need to make a max heap because you want to pop the max elements out and leave all the small ones. 
+  you will be pushing tuples into the PQ (distance, point), the PQ sorts by the first element in the tuple. Then you pop until the pq has a length of k and return 
+  just the points.
