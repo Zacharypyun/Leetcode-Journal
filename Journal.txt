@@ -127,3 +127,17 @@ loop until left > right. Then mid < target, set left = mid + 1. When mid > targe
 • Kth Largest Element in an Array (medium) 7/30/2025
   create a max heap, then pop out k elements then return the front of the PQ. HOWEVER, THIS IS NOT THE MOST OPTIMAL SOLUTION (using PQ is n log n). The most optimal solution 
   is if you use quicksort algorith (O(n)), I dont remember quicksort, RELEARN ALL THE SEARCH AND SORT ALGORITHMS AFTER RELEARNING DATA STRUCTURES
+• Task Scheduler (medium) 7/31/2025
+  first you create a frequency hashmap for the number of each task. Then make a max_heap out of the values from freq (you only need the values because we are returning just a num,
+  no reason to store the task itself). Now you want to loop until the max_heap is empty because we are going to keep filling it and popping from it until all of frequency is used.
+  inside the loop you track the left over frequencies to push back into heap at the end of each iteration. We then need to cycle through the tasks (n + 1), we know that the same task
+  have to be n appart so using n + 1 garantees it. inside the loop first of all you check that max_heap isn't empty (if it is you skip becuase idle), then you save the largest count
+  decrement it and add back to temp list. Then push left over counts to the max_heap, and then return the time at the end. at each step check if heap or temp is empty to break
+• Design Twitter (medium) 7/31/2025
+  track following (hashmap of userID: list of other userId's), tweets (hashmap of userId: list of tuples), and timestamp (helps with ordering heap). for post add tuple of 
+  (timestamp, tweetId) to hashmap. for follow and unfollow use .add() and .discard(). For feed, create a max_heap of all the tweets from every followed user (and personal userId) 
+  Then pop and insure that the feed is only length of 10, (the 10 tweets with the largest timestamps) 
+• Find Median from Data Stream (hard) 7/31/2025
+  have 2 heaps, one for the left side (max_heap) and the right side (min_heap). its backwards becaue for the left you want the first index to be larges, and vice versa for right side.
+  To add you first push val to left as a negative, then pop largest element from left and push to right as a negative, then check length and if the right is longer than the left, pop 
+  and push the smallest from the right to the left. To return values just view the first elements, DONT POP (it will mess up future medians if more elements are added)
