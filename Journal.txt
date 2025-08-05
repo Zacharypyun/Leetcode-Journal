@@ -142,8 +142,8 @@ loop until left > right. Then mid < target, set left = mid + 1. When mid > targe
   To add you first push val to left as a negative, then pop largest element from left and push to right as a negative, then check length and if the right is longer than the left, pop 
   and push the smallest from the right to the left. To return values just view the first elements, DONT POP (it will mess up future medians if more elements are added)
 
-  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-⭐ backtracking
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+⭐ Backtracking
 • Subsets (medium) 8/5/2025
   in order to find all possible subsets you are going to need to use backtracking. how it works is that you are recursivly checking each possible subset, and in each one you are looping
   through the possible numbers. you start by creating a return list and a temp list, within the recursive function you first append the current list (temp) to the return list. then you 
@@ -158,3 +158,10 @@ loop until left > right. Then mid < target, set left = mid + 1. When mid > targe
   this is very similar to combination sum but you cannot reuse any elements (even duplicate elements with diffrent indecies). To edit the combination sum to work the recursive becomes 
   backtrack(i + 1) and you have to skip any repeated elements. you do this by checking if the current element is the same as the last and if it is you continue (use an and i > start 
   to make sure that you are not going out of bounds because at start there is no i - 1)
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+⭐ Graphs
+• Number of Islands (medium) 8/5/2025
+  The goal of this code is to find the number of islands. And they way that I do it in my solution is that whenever a "1" is found (part island) i search the entire island (dfs on graph)
+  turning all the 1's into 0's. This basically finds the entire island and makes sure that it cant be found again. So the goal now is to find a part of each island to "delete" them (and
+  increase count). You do this by iterating though the grid (nested for loop) and if an element equals 1 you run the dfs (to remove all the 1's that make up that island) and increment count
