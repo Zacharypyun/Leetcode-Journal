@@ -168,3 +168,7 @@ loop until left > right. Then mid < target, set left = mid + 1. When mid > targe
 • Max Area of Island (medium) 8/5/2025
   Similar to the number of islands problem but you are finding the largest island. So to do this you change the dfs recursive function to count each 1 (they are ints this time), then do 
   the same, change them to 0's and recurse. Then in the nested for loop track a max value that stores the max island and return it 
+• Clone Graph (medium) 8/5/2025
+  You need to track copies nodes to prevent dupicates from being created. This will be defined in a def __init__(self) that you make, this will be a hashmap because if the original and 
+  copy are linked its easier to use them. In the actual function you will recursivly call it without a helper function. First you check that it is a node (if not return none) then check 
+  if its in the hashmap (if it is just use the hashmap to return the copy), then create the copy and append neighbors using a loop and a recusrive call inside. Then return the copy 
