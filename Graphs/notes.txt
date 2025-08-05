@@ -1,0 +1,26 @@
+Most common graph algorithms 
+    1. DFS:
+        • Done recursivly 
+        • O(n)
+        • Data structures needed: hashset
+        • Done the same as tree DFS but you store visited nodes to prevent cycles
+    2. BFS:
+        • Done using a queue
+        • O(n)
+        • Data structures needed: queue, hashset
+        • Also the same as tree BFS but using a hashset to ctore visited nodes
+    3. Dijkstras:
+        • Picks the shortest path each time 
+        • O(Elog(V))
+        • Data structures needed: pq/heap, hashset
+        • Pick the shortest path to each node (track current length), store seen nodes in hashset
+    4. Union Find
+        • learn how to do
+        • O(nlog(n))
+        • Data structures needed: forest of trees
+        •    
+    5. Topological Sort:
+        • relearn
+        • O(n)
+        • Data structures needed: hashset
+        • Done using DFS 

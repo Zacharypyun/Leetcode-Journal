@@ -1,0 +1,4 @@
+Dynamic programming is Recustion + Memorization.
+    It's main purpouse (use on problems where...) you want to break up a problem into smaller parts (like recusrion) but there is alot of overlap so you don't want to compute the same things over and over again
+
+For most basic and intermediate problems you should be able to get by using arrays and hashmaps to store a cache of complete problems (can be re used with a O(1) lookup time) 
