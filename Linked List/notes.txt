@@ -1,0 +1,6 @@
+Use when:
+    You’re dealing with problems requiring node insertion/deletion in O(1) time.
+    Problems involving reversing parts of the list or detecting cycles.
+    Often indicated when the input/output is a linked list or operations on nodes.
+Examples:
+    Reverse linked list, merge two lists, detect cycle.

@@ -1,0 +1,7 @@
+Use when:
+    The problem asks for something like longest/shortest substring or subarray with certain properties.
+    You need to process contiguous segments efficiently.
+    Constraints hint at linear time solutions on sequences.
+Typical patterns:
+    Fixed-size window (e.g., max in window size k).
+    Variable-size window expanding/shrinking to meet conditions.

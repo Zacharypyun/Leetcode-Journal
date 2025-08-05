@@ -1,0 +1,8 @@
+Use when:
+    The problem involves a sorted array or range.
+    You want to find a target or boundary (e.g., smallest/largest element meeting a condition).
+    You want to search in logarithmic time.
+Classic clues:
+    “Find element in sorted array”
+    “Find minimum/maximum value under constraints”
+    “Search in rotated sorted array”

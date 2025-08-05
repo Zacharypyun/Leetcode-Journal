@@ -1,0 +1,6 @@
+Use when:
+    Input is naturally a tree (e.g., binary tree, N-ary tree).
+    You need to traverse hierarchies, search, or compute aggregations on nodes.
+    Recursive or DFS/BFS traversal is common.
+Clues:
+    Problems with “root,” “left/right child,” “tree height,” “lowest common ancestor.”

@@ -1,0 +1,5 @@
+Use when:
+    The problem involves pairs or segments in a sorted array or list.
+    You want to find pairs that satisfy a condition.
+    Common in problems asking for sum equals target, removing duplicates, or reversing sequences.
+Often combined with sorting.

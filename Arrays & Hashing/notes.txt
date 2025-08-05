@@ -1,0 +1,7 @@
+Look for problems about:
+    Finding duplicates, frequency counts, or quick lookups.
+    Checking for presence of elements.
+    Counting occurrences, grouping, or mapping values.
+    Hashing is often used for O(1) average-time lookup.
+Example problem types:
+    Two sum, anagrams, longest substring without repeating characters, etc.

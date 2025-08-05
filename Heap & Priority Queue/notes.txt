@@ -1,0 +1,6 @@
+Use when:
+    You need to efficiently find or maintain the minimum or maximum element.
+    Problems involving top k elements, merging sorted lists, or scheduling tasks.
+    Dynamically maintaining order while inserting/removing.
+Examples:
+    Kth largest element, merge k sorted lists, task schedulers.

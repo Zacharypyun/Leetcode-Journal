@@ -1,0 +1,6 @@
+Use when:
+    You need to track recent elements and possibly “undo” or match parentheses.
+    Problems involving next greater/smaller element, monotonic sequences.
+    Traversals (e.g., tree DFS iterative).
+Examples:
+    Valid parentheses, largest rectangle in histogram.
