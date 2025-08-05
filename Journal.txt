@@ -141,3 +141,12 @@ loop until left > right. Then mid < target, set left = mid + 1. When mid > targe
   have 2 heaps, one for the left side (max_heap) and the right side (min_heap). its backwards becaue for the left you want the first index to be larges, and vice versa for right side.
   To add you first push val to left as a negative, then pop largest element from left and push to right as a negative, then check length and if the right is longer than the left, pop 
   and push the smallest from the right to the left. To return values just view the first elements, DONT POP (it will mess up future medians if more elements are added)
+
+  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+⭐ backtracking
+• Subsets (medium) 8/5/2025
+  in order to find all possible subsets you are going to need to use backtracking. how it works is that you are recursivly checking each possible subset, and in each one you are looping
+  through the possible numbers. you start by creating a return list and a temp list, within the recursive function you first append the current list (temp) to the return list. then you 
+  loop from the current index to the end, within it you append the number to the temp list then recursivly call function using the next index, after that you pop the element you just added.
+  So how it works is you basically temporarilly add an element then keep going down the tree, then once the recusion ends you remove the element and add the next one. For nums = [1, 2, 3]
+  the subsets get added to the return list in this order [[], [1], [1, 2], [1, 2, 3], [1, 3], [2], [2, 3], [3]]

@@ -1,0 +1,15 @@
+All backtracking problems will follow the same pattern/structure.
+some sort of recursive function, a loop within the function, and a appending and popping (backtracking part) of a list/object
+
+syntax:
+    def backtracking(point):
+        if base_case_condition:
+            res.append(temp[:])  #have to do temp[:] because just temp is a reference so when popping the appended temp also changes
+            return
+        for each possible choice:
+            make the choice #(either append or add)
+            backtrack(next_point) #recursive calls
+            undo the choice #popping or removing previously added element
+
+A majority of backtracking problems are the ones where they ask for all possible combinations/permutations of somthing. If you see a problem
+asking for exploring all choices or to provide all solutions it is most likely a backtracking problem
