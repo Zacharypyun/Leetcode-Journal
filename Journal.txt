@@ -165,3 +165,6 @@ loop until left > right. Then mid < target, set left = mid + 1. When mid > targe
   The goal of this code is to find the number of islands. And they way that I do it in my solution is that whenever a "1" is found (part island) i search the entire island (dfs on graph)
   turning all the 1's into 0's. This basically finds the entire island and makes sure that it cant be found again. So the goal now is to find a part of each island to "delete" them (and
   increase count). You do this by iterating though the grid (nested for loop) and if an element equals 1 you run the dfs (to remove all the 1's that make up that island) and increment count
+• Max Area of Island (medium) 8/5/2025
+  Similar to the number of islands problem but you are finding the largest island. So to do this you change the dfs recursive function to count each 1 (they are ints this time), then do 
+  the same, change them to 0's and recurse. Then in the nested for loop track a max value that stores the max island and return it 
