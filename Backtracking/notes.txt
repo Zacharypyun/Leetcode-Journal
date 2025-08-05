@@ -13,3 +13,14 @@ syntax:
 
 A majority of backtracking problems are the ones where they ask for all possible combinations/permutations of somthing. If you see a problem
 asking for exploring all choices or to provide all solutions it is most likely a backtracking problem
+
+If elements cant be reused use backtrack(i + 1) (only elements after i will be used in recursive calls)
+If elements can be reused use backtrack(i) (will always check all elements) (if you have this you need a basecase that returns/breaks the recursion)
+
+You should always pass the temp list (if it has a total pass it too) in the reducsive function
+
+ASK YOURSELF: 
+    1. Can elements be reused? → If yes, call backtrack(i) (not i + 1)
+    2. Do combinations have to be unique? → Use start index to avoid revisiting earlier elements
+    3. Is the target an exact sum? → Track total or sum(temp) and prune if > target
+    4. Are there duplicates in input? → You might need sorting + skipping logic (not needed in this specific problem)
