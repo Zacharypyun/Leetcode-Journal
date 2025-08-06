@@ -172,3 +172,13 @@ loop until left > right. Then mid < target, set left = mid + 1. When mid > targe
   You need to track copies nodes to prevent dupicates from being created. This will be defined in a def __init__(self) that you make, this will be a hashmap because if the original and 
   copy are linked its easier to use them. In the actual function you will recursivly call it without a helper function. First you check that it is a node (if not return none) then check 
   if its in the hashmap (if it is just use the hashmap to return the copy), then create the copy and append neighbors using a loop and a recusrive call inside. Then return the copy 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+⭐ 1-D Dynamic Programming
+• Climbing Stairs (easy) 8/6/2025
+  This problem is basically just fibinoci sequence. I solved it bot bottom up and top down. For bottom up you create a list to store solutions and you work from the first index (techically
+  from index 2 for stairs because 0 and 1 are always 1), so you loop from 2 to range(len) + 1 and at each loop the number of ways is (i - 1) + (i - 2) solutions. For top down you are doing 
+  recustions with a hashmap (memory), you need a helper function that performs the recustion and store the hashmap outside of it. Inside the recustion you check if the index is either out
+  of bounds, equals n, or is in memory, and if it isnt you calculate it using (i + 1) + (i + 2) then return the final index
+• Min Cost Climbing Stairs (easy) 8/6/2025
+  this is similar to regular climbing stairs but you cant really use top down (it is very slow, still same runtime but not competiticly fast in leetcode). First you create the list with
+  length + 1 indecies, then you loop through from 2 to length + 1, inside the loop you set indexes to the minimum of the previous 2 totals + the cost of those steps
