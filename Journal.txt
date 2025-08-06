@@ -182,3 +182,8 @@ loop until left > right. Then mid < target, set left = mid + 1. When mid > targe
 • Min Cost Climbing Stairs (easy) 8/6/2025
   this is similar to regular climbing stairs but you cant really use top down (it is very slow, still same runtime but not competiticly fast in leetcode). First you create the list with
   length + 1 indecies, then you loop through from 2 to length + 1, inside the loop you set indexes to the minimum of the previous 2 totals + the cost of those steps
+• House Robber (medium) 8/6/2025
+  you are tracking the possible maximum at each house, either the total amount from the previous house or the sum of the current house + total of house from 2 ago. because of this we know
+  that there are n elements in the array and you must define 0 and 1 before the loop (dp[1] = max(nums[0], nums[1]) becuase as a base case you need to think about what gets returned If
+  the only indexes are 0 and 1). if its confusing for the loop remember that you are allowed to increment by 3, (ex. you rob house 1 then skip 2 and 3 becasue 4 has more than both combined).
+  Inside the loop you check the max between the current house + 2 houses ago, and the previous house's total. Then you return the last element in the array after the loop
