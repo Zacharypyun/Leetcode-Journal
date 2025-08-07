@@ -158,6 +158,12 @@ loop until left > right. Then mid < target, set left = mid + 1. When mid > targe
   this is very similar to combination sum but you cannot reuse any elements (even duplicate elements with diffrent indecies). To edit the combination sum to work the recursive becomes 
   backtrack(i + 1) and you have to skip any repeated elements. you do this by checking if the current element is the same as the last and if it is you continue (use an and i > start 
   to make sure that you are not going out of bounds because at start there is no i - 1)
+• Permutations (medium) 8/7/2025
+  still a backtracking problem so it follows the same pattern. However this is diffrent from subsets as you use all elements in nums just in a diffrent order each time. So inside the
+  backtracking function you only append to res when the length of the temp array and the length of nums are the same. Its also diffrent because you pass the used elements in a boolean
+  array and the temp array in each recursive call. The bool array tracks which numbers are used in each temp. So how it work for nums = [1, 2, 3] for example, in the loop it first
+  makes an array of [1] the calls backtracking, then backtracks to [] and appends [2] the the same to make [3]. And each one of those arrays slowly builds until all the other elements
+  are appended (the used for each one will be true for all the indexes, technically its the same arrays but backtracking makes it diffrent ones at diffrent times/recursive calls)
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ⭐ Graphs
