@@ -164,6 +164,10 @@ loop until left > right. Then mid < target, set left = mid + 1. When mid > targe
   array and the temp array in each recursive call. The bool array tracks which numbers are used in each temp. So how it work for nums = [1, 2, 3] for example, in the loop it first
   makes an array of [1] the calls backtracking, then backtracks to [] and appends [2] the the same to make [3]. And each one of those arrays slowly builds until all the other elements
   are appended (the used for each one will be true for all the indexes, technically its the same arrays but backtracking makes it diffrent ones at diffrent times/recursive calls)
+• Subsets II (medium) 8/7/2025
+  This problem is the same as subsets but there are duplicate elements in the list of nums. To do this first sort nums so all duplicates are next to each other. Then its basically the 
+  same as normal subsets but at the beginning of the loop you check if i is greater that start (not the first element) and that the previous num and the current num are equal 
+  (nums[i] == nums[i-1]) and if it is you continue. Everything else is the same
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ⭐ Graphs
