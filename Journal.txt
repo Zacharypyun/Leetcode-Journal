@@ -112,6 +112,10 @@ loop until left > right. Then mid < target, set left = mid + 1. When mid > targe
 • Subtree of Another Tree (easy) 7/24/2025
   Uses the same idea in Same Tree as a helper function to help prove that a subtree is the same as the provided tree. Then using the check function check every node to try 
   and find a node here its tree and the provided subtree return true from check()
+• Lowest Common Ancestor in Binary Tree (medium) 8/12/2025
+  You dont even need an algorithm for this problem. You just check if both nodes are less than or greater than the root then traverse down that side and it they aren't either 
+  you return the root. Its a binary tree so smaller is always left and larger is always right, so if one of the nodes is smaller and the other is larger you know that they split 
+  at that root
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ⭐ Heap & Priority Queue
