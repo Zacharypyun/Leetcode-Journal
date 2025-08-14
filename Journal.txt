@@ -116,6 +116,14 @@ loop until left > right. Then mid < target, set left = mid + 1. When mid > targe
   You dont even need an algorithm for this problem. You just check if both nodes are less than or greater than the root then traverse down that side and it they aren't either 
   you return the root. Its a binary tree so smaller is always left and larger is always right, so if one of the nodes is smaller and the other is larger you know that they split 
   at that root
+• Binary Tree Level Order Traversal (medium) 7/13/2025
+  Literally just BFS traversal. So you make a queue and insert the first node into it. Then you loop (while) until the queue is empty. Inside the loop you pop the top element
+  and append its children to it.
+• Binary Tree Right Side View (medium) 7/13/2025
+  you do bfs on the tree and each level temporarilly. when the level is finished you save the last element in the level then return a list of all those values
+• Count Good Nodes in a Binary Tree (medium) 7/13/2025
+  you do depth first search and pass both the root and the current maxVal for each recursive call (the maxVal will be the largest node in the path). This problem is just like
+  regular DFS but you check if maxVal has changed before recursive call, and you count good nodes (nodes that are less than or equal to maxVal for the path)
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ⭐ Heap & Priority Queue
@@ -186,6 +194,13 @@ loop until left > right. Then mid < target, set left = mid + 1. When mid > targe
   You need to track copies nodes to prevent dupicates from being created. This will be defined in a def __init__(self) that you make, this will be a hashmap because if the original and 
   copy are linked its easier to use them. In the actual function you will recursivly call it without a helper function. First you check that it is a node (if not return none) then check 
   if its in the hashmap (if it is just use the hashmap to return the copy), then create the copy and append neighbors using a loop and a recusrive call inside. Then return the copy 
+• Walls and Gates (medium) 8/13/2025
+  USING BFS. first you find the indexes of all "treasure" (indexes that equal 0) and store them in a queue. Then while loop till queue is empty, and inside you have a loop to make new
+  temp indecies for each direction. You check if each new index is in range and equal to inf and if it is you change it to the current indexes value + 1 and append new value to queue
+• Rotting Oranges (medium) 8/13/2025
+  very similar to the last problem but you track minutes and the number of fresh oranges left. In the while loop you also loop through directions and check if indicies are in range and 
+  equal, however there are 2 loops inside the while loop, one for each index in each level, and the next for each direction at each index
+
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ⭐ 1-D Dynamic Programming
 • Climbing Stairs (easy) 8/6/2025
